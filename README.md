@@ -21,7 +21,7 @@ This application allows the user to enter their birth year and then displays the
   * Expected output: 7
 * Return age in Venus years(.62 Earth years)
   * Expected input: 28
-  * Expected output: 17
+  * Expected output: 18
 * Return age in Mars years
   * Expected input: 28
   * Expected output: 53

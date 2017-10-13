@@ -23,4 +23,8 @@ describe('AgeCalculator', function(){
     expect(testCalculator.venusYears()).toEqual(18);
   });
 
+  it('will return age in Mars years', function(){
+    expect(testCalculator.marsYears()).toEqual(53);
+  });
+
 });

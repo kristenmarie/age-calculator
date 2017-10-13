@@ -33,4 +33,9 @@ export class AgeCalculator{
     return Math.round((age * 0.62)/ 31556952);
   }
 
+  marsYears(){
+    let age = this.timeDifference();
+    return Math.round((age * 1.88)/ 31556952);
+  }
+
 }
