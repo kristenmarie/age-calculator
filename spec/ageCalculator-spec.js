@@ -8,11 +8,11 @@ describe('AgeCalculator', function(){
 
 
   it('will take two dates and determine the difference between the two in seconds', function(){
-    expect(testCalculator.timeDifference()).toEqual(896554656);
+    expect(testCalculator.timeDifference()).toEqual(894481056);
   });
 
-  // it('will convert an age from years to seconds', function(){
-  //   expect(testCalculator.convertAge()).toEqual(883594656);
-  // });
+  it('will convert an age from years to seconds', function(){
+    expect(testCalculator.convertAge()).toEqual(894481056);
+  });
 
 });

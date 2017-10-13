@@ -5,10 +5,10 @@ export class AgeCalculator{
     this.birthday = birthday;
   }
 
-  // convertAge(){
-  //   let age = this.timeDifference(this.birthday);
-  //   return (age * 31556952);
-  // }
+  convertAge(){
+    let age = this.timeDifference();
+    return(age);
+  }
 
   timeDifference(){
     let birthday = this.birthday.replace(/\//g, '');
@@ -18,7 +18,8 @@ export class AgeCalculator{
     let date = new Date();
     let yearDif = date.getFullYear() - year;
     let monthDif = (date.getMonth() + 1) - month;
-    let difference = (yearDif * 31556952) + (monthDif * 2592000);
+    let dayDif = (date.getDay()) - day;
+    let difference = (yearDif * 31556952) + (monthDif * 2592000) + (dayDif * 86400);
     return difference;
   }
 }
