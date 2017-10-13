@@ -1,13 +1,13 @@
 
 export class AgeCalculator{
 
-  constructor(birthday){
+  constructor(birthday, age){
     this.birthday = birthday;
+    this.age = age;
   }
 
   convertAge(){
-    let age = this.timeDifference();
-    return(age);
+    return(this.age * 31556952);
   }
 
   timeDifference(){
@@ -21,5 +21,10 @@ export class AgeCalculator{
     let dayDif = (date.getDay()) - day;
     let difference = (yearDif * 31556952) + (monthDif * 2592000) + (dayDif * 86400);
     return difference;
+  }
+
+  mercuryYears(){
+    let age = this.timeDifference();
+    return Math.round((age * 0.24) / 31556952);
   }
 }
