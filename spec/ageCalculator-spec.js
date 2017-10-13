@@ -3,7 +3,7 @@ import {AgeCalculator} from './../js/ageCalculator.js';
 describe('AgeCalculator', function(){
   let testCalculator;
   beforeEach(function(){
-    testCalculator = new AgeCalculator('1989/05/29', 28);
+    testCalculator = new AgeCalculator('1989/05/29', 28, 'female');
   });
 
 
@@ -29,6 +29,10 @@ describe('AgeCalculator', function(){
 
   it('will return age in Jupiter years', function() {
     expect(testCalculator.jupiterYears()).toEqual(336);
+  });
+
+  it('will return life expectancy of user based on gender', function(){
+    expect(testCalculator.lifeExpectancy()).toEqual(82);
   });
 
 });

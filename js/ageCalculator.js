@@ -1,9 +1,10 @@
 
 export class AgeCalculator{
 
-  constructor(birthday, age){
+  constructor(birthday, age, gender){
     this.birthday = birthday;
     this.age = age;
+    this.gender = gender;
   }
 
   convertAge(){
@@ -41,6 +42,16 @@ export class AgeCalculator{
   jupiterYears() {
     let age = this.timeDifference();
     return Math.round((age * 11.86)/ 31556952);
+  }
+
+  lifeExpectancy() {
+    if (this.gender === 'female') {
+      return 82;
+    }else if (this.gender === 'male') {
+      return 76;
+    } else {
+      return 80;
+    }
   }
 
 }
