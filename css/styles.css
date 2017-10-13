@@ -9,12 +9,18 @@ body {
 }
 
 label {
-  font-family: 'Abel', sans-serif;
-  color: #3a5fe5;
+  font-family: 'alienEncounters';
+  color: #00FF00;
 }
 
-input {
-  background-color: #073e1e;
+input[type="text"], textarea {
+  background-color : black;
+  color: #00FF00;;
+}
+
+.green {
+    background-color: black;
+    color: #00FF00;
 }
 
 form {
@@ -28,16 +34,32 @@ h1 {
   color: #ff1515;
 }
 
-h2 {
-  font-family: 'Abel', sans-serif;
-  color: #073e1e;
+p {
+  font-family: 'alienEncounters';
+  font-size: 20px;
+  color: #00FF00;
 }
 
-.form-container {
-  margin-left: auto;
-  margin-right: auto;
+h3 {
+  color: #00FF00;
+  font-family: 'alienEncounters';
+}
+
+img {
+  max-width: 300px;
+  max-height: 300px;
 }
 
 .result {
+  display: none;
+}
+
+button {
+  font-family: 'alienEncounters';
+  color: #ff1515;
+  font-size: 40px;
+}
+
+.long-life {
   display: none;
 }

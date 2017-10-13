@@ -16,7 +16,7 @@
         <form id="user-information">
           <div class="form-group has-success">
             <label for="birthday">Enter your birthday (YYYY/MM/DD): </label>
-            <input type="text" id="birthday" class="form-control" required>
+            <input type="text" id="birthday" class="form-control" placeholder = "YYYY/MM/DD" required>
           </div>
           <div class="form-group has-success">
             <label for="age">Age:</label>
@@ -24,35 +24,62 @@
           </div>
           <div class="form-group has-success">
             <label for="gender">Gender:</label>
-            <select class="form-control" id="gender">
-              <option value="female">Female</option>
-              <option value="male">Male</option>
-              <option value="other">Other</option>
+            <select class="form-control green" id="gender">
+              <option class= "green" value="female">Female</option>
+              <option class= "green" value="male">Male</option>
+              <option class= "green" value="other">Other</option>
             </select>
           </div>
           <div class="form-group has-success">
             <label for="smoker">Do you smoke?</label>
-            <select class="form-control" id="smoker">
-              <option value="true">Yes</option>
-              <option value="false">No</option>
+            <select class="form-control green" id="smoker">
+              <option class= "green" value="true">Yes</option>
+              <option class= "green" value="false">No</option>
             </select>
           </div>
           <div class="form-group has-success">
             <label for="exercise">Do you exercise?</label>
-            <select class="form-control" id="exercise">
-              <option value="true">Yes</option>
-              <option value="false">No</option>
+            <select class="form-control green" id="exercise">
+              <option class= "green" value="true">Yes</option>
+              <option class= "green" value="false">No</option>
             </select>
           </div>
-          <button type="submit" class="btn btn-success">Go!</button>
+          <button type="submit" class="btn-lg btn-danger">Go!</button>
         </form>
       </div></center>
       <center><div class="result">
-        <h2>Age on Earth: <span id="user-age"></span> Years Old | Time remaining on Earth <span id="earth-span"></span> Years</h2>
-        <h2>Age on Mercury: <span id="mercury-age"></span> Years Old | Time remaining on Mercury: <span id="mercury-span"></span> Years</h2>
-        <h2>Age on Venus: <span id="venus-age"></span> Years Old | Time remaining on Venus: <span id="venus-span"></span> Years</h2>
-        <h2>Age on Mars: <span id="mars-age"></span> Years Old | Time remaining on Mars: <span id="mars-span"></span> Years</h2>
-        <h2>Age on Jupiter: <span id="jupiter-age"></span> Years Old | Time remaining on Jupiter: <span id="jupiter-span"></span> Years</h2>
+        <div class="long-life">
+          <h3>Merlin's Beard! You've already surpassed the average life expectancy! Congratulations, Earthling. May you live longer and prosper.</h3>
+        </div>
+        <img src="img/earth.png" alt="earth">
+        <p>Age on Earth: <span id="user-age"></span> Years Old</p>
+        <p>Time remaining on Earth: <span id="earth-span"></span> Years</p>
+        <div class="row">
+          <div class="col-md-6">
+            <img src="img/mercury.png" alt="mercury">
+            <p>Age on Mercury: <span id="mercury-age"></span> Years Old</p>
+            <p>Time remaining on Mercury: <span id="mercury-span"></span> Years</p>
+          </div>
+          <div class="col-md-6">
+            <img src="img/venus.png" alt="venus">
+            <p>Age on Venus: <span id="venus-age"></span> Years Old</p>
+            <p>Time remaining on Venus: <span id="venus-span"></span> Years</p>
+          </div>
+        </div>
+        <br>
+        <br>
+        <div class="row">
+          <div class="col-md-6">
+            <img src="img/mars.png" alt="mars">
+            <p>Age on Mars: <span id="mars-age"></span> Years Old</p>
+            <p>Time remaining on Mars: <span id="mars-span"></span> Years</p>
+          </div>
+          <div class="col-md-6">
+            <img src="img/jupiter.png" alt="jupiter">
+            <p>Age on Jupiter: <span id="jupiter-age"></span> Years Old</p>
+            <p>Time remaining on Jupiter: <span id="jupiter-span"></span> Years</p>
+          </div>
+        </div>
       </div></center>
     </div>
   </body>

@@ -117,6 +117,9 @@ $(document).ready(function () {
     $('#jupiter-age').text(jupiterYears);
     $('#jupiter-span').text(userCalculator.lifeExpectancy() - jupiterYears);
     $('.result').show();
+    if (age > userCalculator.lifeExpectancy()) {
+      $('.long-life').show();
+    }
   });
 });
 
