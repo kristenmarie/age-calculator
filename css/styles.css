@@ -1,12 +1,41 @@
+@import url('https://fonts.googleapis.com/css?family=Abel');
 @font-face {
   font-family: "alienEncounters";
   src: url('../fonts/SFAlienEncounters.ttf');
+}
+
+body {
+  background-color: black;
+}
+
+label {
+  font-family: 'Abel', sans-serif;
+  color: #3a5fe5;
+}
+
+input {
+  background-color: #073e1e;
+}
+
+form {
+  max-width: 400px;
 }
 
 h1 {
   text-align: center;
   font-family: 'alienEncounters';
   font-size: 70px;
+  color: #ff1515;
+}
+
+h2 {
+  font-family: 'Abel', sans-serif;
+  color: #073e1e;
+}
+
+.form-container {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .result {
