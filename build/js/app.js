@@ -96,7 +96,7 @@ $(document).ready(function () {
   $('form#user-information').submit(function (event) {
     event.preventDefault();
     var birthday = $('input#birthday').val();
-    var age = parseInt($('input#birthday').val());
+    var age = parseInt($('input#age').val());
     var gender = $('input#gender').val();
     var smoker = $('input#smoker');
     var exercise = $('input#exercise');
@@ -106,6 +106,16 @@ $(document).ready(function () {
     var marsYears = userCalculator.marsYears();
     var jupiterYears = userCalculator.jupiterYears();
     $('.form-container').hide();
+    $('#user-age').text(age);
+    $('#earth-span').text(userCalculator.lifeExpectancy() - age);
+    $('#mercury-age').text(mercuryYears);
+    $('#mercury-span').text(userCalculator.lifeExpectancy() - mercuryYears);
+    $('#venus-age').text(venusYears);
+    $('#venus-span').text(userCalculator.lifeExpectancy() - venusYears);
+    $('#mars-age').text(marsYears);
+    $('#mars-span').text(userCalculator.lifeExpectancy() - marsYears);
+    $('#jupiter-age').text(jupiterYears);
+    $('#jupiter-span').text(userCalculator.lifeExpectancy() - jupiterYears);
     $('.result').show();
   });
 });
