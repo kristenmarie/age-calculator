@@ -1,4 +1,5 @@
 # Super Galactic Age Calculator
+![image](https://user-images.githubusercontent.com/15882954/31570246-b4747eec-b036-11e7-9b25-22d94737ba60.jpg)
 
 #### An application that determines a user’s age based on a planet’s solar years, 10.13.2017
 
@@ -66,6 +67,10 @@ This application allows the user to enter their birth year and then displays the
 ## 🐛Known Bugs🐛
 
 There are no known bugs at this time.
+
+## Future functionality
+
+Reconfigure a bit so when the users age surpasses their estimated life expectancy it reconfigures their time remaining on all the different planets.
 
 ## 📧Support and contact details📧
 
