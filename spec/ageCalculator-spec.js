@@ -3,7 +3,7 @@ import {AgeCalculator} from './../js/ageCalculator.js';
 describe('AgeCalculator', function(){
   let testCalculator;
   beforeEach(function(){
-    testCalculator = new AgeCalculator('1989/05/29', 28, 'female', true);
+    testCalculator = new AgeCalculator('1989/05/29', 28, 'female', true, true);
   });
 
 
@@ -32,10 +32,14 @@ describe('AgeCalculator', function(){
   });
 
   it('will return life expectancy of user based on gender', function(){
-    expect(testCalculator.lifeExpectancy()).toEqual(72);
+    expect(testCalculator.lifeExpectancy()).toEqual(75);
   });
 
   it('will decrease life expectancy if user is a smoker', function(){
-    expect(testCalculator.lifeExpectancy()).toEqual(72);
+    expect(testCalculator.lifeExpectancy()).toEqual(75);
+  });
+
+  it('will increase life expectancy if user exercises', function(){
+    expect(testCalculator.lifeExpectancy()).toEqual(75);
   });
 });

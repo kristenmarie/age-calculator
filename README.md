@@ -31,6 +31,12 @@ This application allows the user to enter their birth year and then displays the
 * Return life expectancy of user based on gender
   * Expected input: 'female'
   * Expected output: 82
+* Decrease life expectancy if user is a smoker.
+  * Expected input: 'female', true
+  * Expected output: 72
+* Increase life expectancy if user exercises
+  * Expected input: 'female', true, true
+  * Expected output: 75
 * Return years of life left on Mercury
   * Expected input:
   * Expected output:
