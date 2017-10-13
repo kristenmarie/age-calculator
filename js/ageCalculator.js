@@ -1,10 +1,11 @@
 
 export class AgeCalculator{
 
-  constructor(birthday, age, gender){
+  constructor(birthday, age, gender, smoker){
     this.birthday = birthday;
     this.age = age;
     this.gender = gender;
+    this.isSmoker = true;
   }
 
   convertAge(){
@@ -45,13 +46,18 @@ export class AgeCalculator{
   }
 
   lifeExpectancy() {
+    let life;
     if (this.gender === 'female') {
-      return 82;
+      life =  82;
     }else if (this.gender === 'male') {
-      return 76;
+      life = 76;
     } else {
-      return 80;
+      life = 80;
     }
+    if (this.isSmoker === true) {
+      life -= 10;
+    }
+    return life;
   }
 
 }
