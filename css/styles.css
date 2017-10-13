@@ -1,0 +1,14 @@
+@font-face {
+  font-family: "alienEncounters";
+  src: url('../fonts/SFAlienEncounters.ttf');
+}
+
+h1 {
+  text-align: center;
+  font-family: 'alienEncounters';
+  font-size: 70px;
+}
+
+.result {
+  display: none;
+}

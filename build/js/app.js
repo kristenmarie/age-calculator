@@ -98,13 +98,15 @@ $(document).ready(function () {
     var birthday = $('input#birthday').val();
     var age = parseInt($('input#birthday').val());
     var gender = $('input#gender').val();
-    var smoker = $.parseJSON($('input#smoker'));
-    var exercise = $.parseJSON($('input#exercise'));
+    var smoker = $('input#smoker');
+    var exercise = $('input#exercise');
     var userCalculator = new _ageCalculator.AgeCalculator(birthday, age, gender, smoker, exercise);
     var mercuryYears = userCalculator.mercuryYears();
     var venusYears = userCalculator.venusYears();
     var marsYears = userCalculator.marsYears();
     var jupiterYears = userCalculator.jupiterYears();
+    $('.form-container').hide();
+    $('.result').show();
   });
 });
 
