@@ -19,4 +19,8 @@ describe('AgeCalculator', function(){
     expect(testCalculator.mercuryYears()).toEqual(7);
   });
 
+  it('will return age in Venus years', function(){
+    expect(testCalculator.venusYears()).toEqual(18);
+  });
+
 });

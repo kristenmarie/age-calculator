@@ -18,16 +18,16 @@ This application allows the user to enter their birth year and then displays the
   * Expected output: 86,400
 * Return age in Mercury years(.24 Earth years)  
   * Expected input: 28
-  * Expected output: 6.72
+  * Expected output: 7
 * Return age in Venus years(.62 Earth years)
   * Expected input: 28
-  * Expected output: 17.36
+  * Expected output: 17
 * Return age in Mars years
   * Expected input: 28
-  * Expected output: 52.64
+  * Expected output: 53
 * Return age in Jupiter years
   * Expected input: 28
-  * Expected output: 332.08
+  * Expected output: 332
 * Return years of life left on Mercury
   * Expected input:
   * Expected output:

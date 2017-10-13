@@ -27,4 +27,10 @@ export class AgeCalculator{
     let age = this.timeDifference();
     return Math.round((age * 0.24) / 31556952);
   }
+
+  venusYears(){
+    let age = this.timeDifference();
+    return Math.round((age * 0.62)/ 31556952);
+  }
+
 }
