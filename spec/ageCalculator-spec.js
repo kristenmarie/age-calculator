@@ -9,4 +9,8 @@ describe('AgeCalculator', function(){
   it('will convert an age from years to seconds', function(){
     expect(testCalculator.convertAge()).toEqual(883594656);
   });
+
+  it('will take two dates and determine the difference between the two in seconds', function(){
+
+  });
 });
