@@ -34,7 +34,7 @@ gulp.task('jsBrowserify', ['concatInterface'], function() {
     }))
     .bundle()
     .pipe(source('app.js'))
-    .pipe(gulp.dest('./build/js'))
+    .pipe(gulp.dest('./build/js'));
 });
 
 gulp.task('minifyScripts', ['jsBrowserify'], function(){
@@ -100,10 +100,10 @@ gulp.task('bowerBuild', ['bower'], function(){
 gulp.task("cssBuild", function() {
   gulp.src(['css/*.css'])
   .pipe(concat('vendor.css'))
-  .pipe(gulp.dest('./build/css'))
+  .pipe(gulp.dest('./build/css'));
 });
 
 gulp.task("fontBuild", function() {
   gulp.src(['css/*.ttf'])
-  .pipe(gulp.dest('./build/fonts'))
+  .pipe(gulp.dest('./build/fonts'));
 });
