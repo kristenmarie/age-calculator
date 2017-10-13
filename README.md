@@ -27,7 +27,7 @@ This application allows the user to enter their birth year and then displays the
   * Expected output: 53
 * Return age in Jupiter years
   * Expected input: 28
-  * Expected output: 332
+  * Expected output: 336
 * Return years of life left on Mercury
   * Expected input:
   * Expected output:

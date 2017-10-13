@@ -38,4 +38,9 @@ export class AgeCalculator{
     return Math.round((age * 1.88)/ 31556952);
   }
 
+  jupiterYears() {
+    let age = this.timeDifference();
+    return Math.round((age * 11.86)/ 31556952);
+  }
+
 }

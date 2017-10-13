@@ -27,4 +27,8 @@ describe('AgeCalculator', function(){
     expect(testCalculator.marsYears()).toEqual(53);
   });
 
+  it('will return age in Jupiter years', function() {
+    expect(testCalculator.jupiterYears()).toEqual(336);
+  });
+
 });
